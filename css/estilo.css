@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat' , sans-serif;
+}
+
+.main{
+    height: 100%;
+}
+.container__input{
+    margin: 100px auto;
+    width: 80%;
+    height: 80vh;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container__input h1{
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: rgb(42, 65, 194);
+}
+.input__target{
+    margin-top: 20px;
+    width: 100%;
+    height: 70px;
+    background-color: cornflowerblue;
+    display: flex;
+    flex-direction: row;
+ justify-content: center;
+align-items: center;
+}
+.input__target input , button{
+    height: 35px;
+}
+.input__target input {
+    width: 260px;
+    outline-color: rgb(218, 142, 49);
+}
+.input__target button{
+    margin-left: 1rem;
+    padding: 0  10px;
+    background-color: rgb(58, 153, 58);
+    color: whitesmoke;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none; 
+    cursor: pointer;
+    user-select: none;
+}
+
+.container__tareas{
+    width: 50%;
+    height: 100%;
+    
+}
+.nota{
+    height: 80px;
+    /* border: 3px solid rgba(134, 128, 142, 0.951); */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 5px;
+}
+.card__tarea{
+    width: 70%;
+   height: 60px;
+   display: flex;
+   align-items: center;
+   gap: 20px;
+}
+.card__tarea p{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.icon__tarea{
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+}
+.container__botones{
+    width: 30%;
+ display: flex;
+ align-items: center;
+ gap: 5px;
+    
+}
+.btn__realizado{
+    padding: 0 15px;
+    background-color: rgb(58, 153, 58);
+    color: white;
+    border: none;
+}
+.btn__borrar{
+    padding: 0 15px;
+    background-color: red;
+    color: whitesmoke;
+    border: none;
+    margin-right: 10px;
+}
+.texto_Nota{
+    text-decoration: none;
+}
+p{ 
+    text-decoration: line-through;
+    text-decoration: none;
+}
