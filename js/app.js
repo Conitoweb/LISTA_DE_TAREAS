@@ -18,16 +18,18 @@ BTN_AÑADIR.addEventListener('click', () => {
             </svg>
             <p class="texto_Nota"> ${dataTarea} </p>
             </div> 
-            <button class="btn__realizado" onclick="cambiar(event)">realizado</button>
+            <button class="btn__realizado" onclick="realizado(event)">realizado</button>
             <button class="btn__borrar" onclick="eliminar(event)" >borrar</button>
-            </div>`)
+            </div>`) 
+              INPUT_DATA.focus()
+              INPUT_DATA.value=""
         } else {
             alert('completa el campo de tarea')
         }
         
     })
     
-function cambiar(event){
+function realizado(event){
    const nodoPadre = event.target.parentNode
    nodoPadre.innerHTML=`      <div class="card__tarea">
             <svg class="icon__tarea" fill="#008000" width="800px" height="800px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
@@ -41,6 +43,8 @@ function cambiar(event){
 }
 function eliminar(event) {
     event.target.parentNode.remove()
+    INPUT_DATA.focus()
+    INPUT_DATA.value=""
 }
 
 
